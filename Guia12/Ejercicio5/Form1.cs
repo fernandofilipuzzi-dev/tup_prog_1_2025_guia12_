@@ -157,10 +157,14 @@ namespace Ejercicio5
             int tipoBusqueda = 0;
             if (rbSecuencial.Checked)
                 tipoBusqueda = 1;
-            else if (rbSecuencial.Checked)
+            else if (rbBiseccional.Checked)
                 tipoBusqueda = 2;
 
-            if (tipoBusqueda == 0) MessageBox.Show("Debe seleccionar un tipo de búsqueda", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if (tipoBusqueda == 0)
+            {
+                MessageBox.Show("Debe seleccionar un tipo de búsqueda", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
             #endregion
 
             int valorABucar = Convert.ToInt32(tbValor.Text);
@@ -200,7 +204,11 @@ namespace Ejercicio5
             else if (rbQuickSort.Checked == true)
                 tipo = 2;
 
-            if (tipo == 0) MessageBox.Show("Debe seleccionar un tipo de ordenamiento", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            if (tipo == 0)
+            {
+                MessageBox.Show("Debe seleccionar un tipo de ordenamiento", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             OrdenarValores(tipo);
 

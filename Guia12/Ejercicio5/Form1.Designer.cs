@@ -144,7 +144,7 @@
             groupBox2.Controls.Add(rbBurbuja);
             groupBox2.Location = new Point(320, 263);
             groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(197, 100);
+            groupBox2.Size = new Size(188, 100);
             groupBox2.TabIndex = 21;
             groupBox2.TabStop = false;
             groupBox2.Text = "Tipo de ordeanmiento";
@@ -197,7 +197,7 @@
             // 
             AutoScaleDimensions = new SizeF(9F, 21F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(541, 476);
+            ClientSize = new Size(519, 476);
             Controls.Add(btnSuperanAlPromedio);
             Controls.Add(btnMostrar);
             Controls.Add(groupBox2);
